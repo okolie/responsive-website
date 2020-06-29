@@ -436,3 +436,89 @@ body {
 	/* outline: #fff; */
 	cursor: pointer;
 }
+footer {
+	background-image: url(./images/footer.png);
+}
+.footer__container {
+	display: grid;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.footer__social {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.footer__image__container {
+	padding: 0.25rem 0;
+	margin: 0.25rem;
+}
+.footer__statement {
+	margin-bottom: 1rem;
+}
+.footer__statement p,
+.footer__attributes p a,
+.footer__address,
+.footer__address p,
+.footer__address p a {
+	color: #fff;
+	font-size: 0.7rem;
+}
+
+.footer__statement p {
+	/* border: 2px solid red; */
+	width: 48%;
+	line-height: 1rem;
+}
+
+.footer__icons {
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__attributes {
+	/* border: 2px solid red; */
+	width: 50%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.footer__attributes p a {
+	text-decoration: none;
+	opacity: 0.5;
+	text-transform: capitalize;
+}
+
+.footer__contact form input {
+	background: transparent;
+	padding: 0.5rem 0.3rem;
+	width: 70%;
+	border: none;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.footer__contact form input::placeholder {
+	color: #fff;
+	opacity: 0.7;
+	letter-spacing: 0.3rem;
+}
+
+.footer__address p {
+	padding-bottom: 1rem;
+}
+.footer__address p a {
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+.footer__address div p:nth-of-type(3),
+.footer__address div p:nth-of-type(4) {
+	letter-spacing: 0.3rem;
+}
