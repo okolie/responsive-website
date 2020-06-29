@@ -25,7 +25,7 @@ body {
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(6, minmax(70px, 1fr));
 
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .intro__rect__container {
@@ -44,7 +44,7 @@ body {
 	margin-top: 2rem;
 }
 .intro__menubtn__container {
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	grid-column: 11/13;
 	grid-row: 1;
 	margin-top: 2rem;
@@ -52,7 +52,7 @@ body {
 .intro__bg__container {
 	grid-column: 3/11;
 	grid-row: 2/11;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .intro__bg__container img {
 	max-width: 100%;
@@ -63,7 +63,7 @@ body {
 	grid-column: 3/-1;
 	grid-row: 3/10;
 	padding: 1rem;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .intro__statement__container .statement {
@@ -90,7 +90,7 @@ body {
 	margin-bottom: 1.5rem;
 	line-height: 1.5rem;
 	width: 75%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .intro__learnmore__description p {
 	color: #fff;
@@ -118,14 +118,14 @@ body {
 	align-items: center;
 	padding: 1rem 0;
 	background-color: #fafafa;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .partners__img__container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .partners__img__container div:nth-of-type(2) {
 	padding-top: 0.3rem;
@@ -143,7 +143,7 @@ body {
 	width: 100;
 	grid-column: 1/-1;
 	grid-row: 2/-1;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .mission__img__container img {
 	max-width: 100%;
@@ -265,7 +265,7 @@ body {
 	align-items: center;
 	padding: 1rem 0;
 	background-color: #fafafa;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 	max-width: 100%;
 }
 .clients__img__container {
@@ -276,7 +276,7 @@ body {
 }
 .clients__img__container > div img {
 	width: 100px;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
 .clients__img__container {
@@ -304,7 +304,7 @@ body {
 .shop__statement {
 	width: 80%;
 	margin: 0 auto;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .shop__statement p {
 	width: 90%;
@@ -329,7 +329,7 @@ body {
 	padding: 1rem 0;
 	margin-bottom: 0.5rem;
 	width: 100%;
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 .shop__order__image img {
 	width: 100%;
