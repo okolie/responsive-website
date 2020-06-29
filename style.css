@@ -136,7 +136,7 @@ body {
 	padding-top: 0.3rem;
 }
 
-/* who are we? */
+/* who are we? / mission */
 
 .mission {
 	display: grid;
@@ -414,7 +414,7 @@ body {
 }
 .contact__form__container form input {
 	/* border: 2px solid red; */
-	padding: 1rem 0;
+	padding: 1rem 2rem;
 	border: transparent;
 	border-bottom: 2px solid;
 	outline: none;
@@ -422,9 +422,6 @@ body {
 .contact__form__container form input:focus,
 .contact__form__container form input:hover {
 	border-bottom-color: #2d7fc0;
-}
-.contact__form__container form input::placeholder {
-	padding-left: 0.5rem;
 }
 
 .contact__form__container button {
@@ -436,6 +433,40 @@ body {
 	/* outline: #fff; */
 	cursor: pointer;
 }
+
+/*generated content for "get in touch" CONTACT */
+.fullName,
+.emailAddress,
+.phoneNumber,
+.message {
+	position: relative;
+}
+.fullName::before,
+.emailAddress::before,
+.phoneNumber::before,
+.message::before {
+	content: "";
+	position: absolute;
+	background-image: url(./images/name.svg);
+	background-size: contain;
+	height: 20px;
+	width: 20px;
+	top: 15px;
+	left: 2px;
+}
+.emailAddress::before {
+	background-image: url(./images/email.svg);
+	height: 14px;
+	top: 19px;
+}
+.phoneNumber::before {
+	background-image: url(./images/phone.svg);
+}
+.message::before {
+	background-image: url(./images/message.svg);
+	top: 19px;
+}
+/* footer */
 footer {
 	background-image: url(./images/footer.png);
 }
@@ -468,7 +499,7 @@ footer {
 
 .footer__statement p {
 	/* border: 2px solid red; */
-	width: 48%;
+	width: 70%;
 	line-height: 1rem;
 }
 
@@ -516,6 +547,10 @@ footer {
 .footer__address p a {
 	text-decoration: none;
 	opacity: 0.7;
+}
+
+.footer__address p:first-child {
+	width: 70%;
 }
 
 .footer__address div p:nth-of-type(3),
