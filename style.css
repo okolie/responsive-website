@@ -383,3 +383,56 @@ body {
 .contact__image__container {
 	display: none;
 }
+
+/* TODO:  */
+.contact {
+	width: 80%;
+	margin: 1rem 0;
+}
+
+.contact__form__container {
+	display: flex;
+	flex-flow: column wrap;
+}
+.contact__form__container h2 {
+	font-weight: normal;
+	font-size: 1.5rem;
+	color: #2d7fc0;
+	padding: 0.5rem 0;
+	/* border: 2px solid red; */
+	margin: 0.5rem 0;
+}
+
+.contact__form__container form {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 1rem 0;
+}
+
+.contact__form__container form label {
+	display: none;
+}
+.contact__form__container form input {
+	/* border: 2px solid red; */
+	padding: 1rem 0;
+	border: transparent;
+	border-bottom: 2px solid;
+	outline: none;
+}
+.contact__form__container form input:focus,
+.contact__form__container form input:hover {
+	border-bottom-color: #2d7fc0;
+}
+.contact__form__container form input::placeholder {
+	padding-left: 0.5rem;
+}
+
+.contact__form__container button {
+	width: 40%;
+	padding: 1rem 1.5rem;
+	color: #fff;
+	background-color: #2d7fc0;
+	border: 1px solid #2d7fc0;
+	/* outline: #fff; */
+	cursor: pointer;
+}
