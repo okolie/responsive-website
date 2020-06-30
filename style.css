@@ -63,6 +63,7 @@ body {
 	animation-name: animateLeft;
 	animation-duration: 0.8s;
 	animation-timing-function: linear;
+	/* animation-delay: 50ms; */
 }
 
 @keyframes animateLeft {
