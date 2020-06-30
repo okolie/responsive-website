@@ -14,23 +14,26 @@
 					alt="blue-rectangle-image-for-styling"
 				/>
 			</div>
-			<nav class="intro__nav">
-				<ul class="intro__nav__container">
-					<li><a href="#company">Company</a></li>
-					<li><a href="#statement">Who we are</a></li>
-					<li><a href="#services">What we do</a></li>
-					<li><a href="#shop">Shop</a></li>
-					<li><a href="#footer">Solutions</a></li>
-					<li><a href="#clients">Our Clientele</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#contact">Get in touch</a></li>
-				</ul>
-			</nav>
+
+			<ul class="intro__nav__container intro__nav">
+				<div class="intro__close">
+					<img src="./images/close.svg" alt="close button" />
+				</div>
+				<li><a href="#company">Company</a></li>
+				<li><a href="#statement">Who we are</a></li>
+				<li><a href="#services">What we do</a></li>
+				<li><a href="#shop">Shop</a></li>
+				<li><a href="#footer">Solutions</a></li>
+				<li><a href="#clients">Our Clientele</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+
 			<div class="intro__logo__container">
 				<img src="./images/logo.svg" alt="site-logo" />
 			</div>
 			<div class="intro__menubtn__container">
-				<img src="./images/menu-button.svg" alt="menu-icon" />
+				<img src="./images/menu-button.svg" alt="menu-Button" />
 			</div>
 			<div class="intro__bg__container">
 				<img src="./images/BG-11.png" alt="background-image" />
@@ -141,13 +144,13 @@
 			</div>
 			<div class="clients__img__container">
 				<div class="radisson">
-					<img src="./images/Radisson Blu.svg" alt="radisson icon" />
+					<img src="./images/Radisson Blu.svg" alt="radisson Button" />
 				</div>
 				<div class="skyjet">
-					<img src="./images/skyjet.svg" alt="skyjet icon" />
+					<img src="./images/skyjet.svg" alt="skyjet Button" />
 				</div>
 				<div class="itoro">
-					<img src="./images/itoro.svg" alt="itoro icon" />
+					<img src="./images/itoro.svg" alt="itoro Button" />
 				</div>
 			</div>
 		</section>
@@ -230,23 +233,71 @@
 				<form action="#" method="POST">
 					<label for="full-name">Full Name</label>
 					<span class="fullName"></span>
-					<input type="text" id="full-name" placeholder="Full Name" />
+					<input type="text" id="full-name" placeholder="Full Name" required />
 
 					<label for="email-address">Email Address</label>
 					<span class="emailAddress"></span>
-					<input type="email" id="email-address" placeholder="Email Address" />
+					<input
+						type="email"
+						id="email-address"
+						placeholder="Email Address"
+						required
+					/>
 
 					<label for="phone-number">Phone Number</label>
 					<span class="phoneNumber"></span>
-					<input type="tel" id="phone-number" placeholder="Phone Number" />
+					<input
+						type="tel"
+						id="phone-number"
+						placeholder="Phone Number"
+						required
+					/>
 
 					<label for="your-message">Your Message</label>
 					<span class="message"></span>
-					<input type="text" id="your-message" placeholder="Your Message" />
+					<input
+						type="text"
+						id="your-message"
+						placeholder="Your Message"
+						required
+					/>
 				</form>
 				<button type="button">Send</button>
 			</div>
 		</section>
+		<!-- <div class="modal">
+			<div class="modal__content">
+				<div class="modal__close"
+					><img src="./images/close.svg" alt="close"
+				/></div>
+				<h2>Who we are?</h2>
+				<p>
+					Our Mission is to Bring a State of Opulence to every Business in
+					<span>Africa.</span>
+				</p>
+				<p>
+					Business, we think should evoke splendour and espouse that perfect
+					ambiance where every corner smells, shines and look like the main
+					area. This is what we call creating a wholesome environment. A state
+					of opulence where you combine artistic excellence and technical
+					mastery. It’s luxury at its highest level of perfection.
+				</p>
+				<p>
+					Like wholesome relationships, it’s a delicate balance and sublime
+					match between sensitivity and practicality, emotions and deep insight,
+					science and art. This, we have done for over a decade to develop
+					innovative and cutting edge hygiene and ambiance solutions that will
+					position your brand to be ten times ahead of competition.
+				</p>
+				<p>
+					Deeply embedded in our Company’s DNA is intricate craftsmanship,
+					pensive art and distilled science of hygiene solutions development.
+					Swissmarkk has partnered with industry leaders to provide an extensive
+					range of premium cleaning products, custom Signature Scent design,
+					natural Essential Oils and advanced Fragrance Diffusion Systems.
+				</p>
+			</div>
+		</div> -->
 		<footer id="footer">
 			<div class="footer__container">
 				<section class="footer__social">
@@ -261,16 +312,16 @@
 					</div>
 					<div class="footer__icons">
 						<div class="facebook">
-							<img src="./images/facebook-2.svg" alt="facebook icon" />
+							<img src="./images/facebook-2.svg" alt="facebook Button" />
 						</div>
 						<div class="twitter">
-							<img src="./images/twitter.svg" alt="twitter icon" />
+							<img src="./images/twitter.svg" alt="twitter Button" />
 						</div>
 						<div class="instagram">
-							<img src="./images/instagram.svg" alt="instagram icon" />
+							<img src="./images/instagram.svg" alt="instagram Button" />
 						</div>
 						<div class="linkedin">
-							<img src="./images/linkedin.svg" alt="linkedin icon" />
+							<img src="./images/linkedin.svg" alt="linkedin Button" />
 						</div>
 					</div>
 					<div class="footer__attributes">
@@ -285,6 +336,7 @@
 				<section class="footer__contact">
 					<form action="" class="footer__form">
 						<label for="footer__email"></label>
+						<span class="footer_email"></span>
 						<input
 							type="email"
 							name="footer__email"
@@ -294,13 +346,19 @@
 					</form>
 					<div class="footer__address">
 						<div class="div">
+							<span class="nth-type-1"></span>
 							<p>
 								6b Bendel Close, Off Bishop Aboyade Cole, Victoria Island,
 								Lagos, Nigeria
 							</p>
 
+							<span class="nth-type-2"></span>
 							<p>8:00 – 6:00pm, Mon – Sat</p>
+
+							<span class="nth-type-3"></span>
 							<p><a href="tel:+2348188209365">+2348188209365</a></p>
+
+							<span class="nth-type-4"></span>
 							<p>
 								<a href="mailto:info@swissmarkk.com"
 									>info@swissmarkk.com <span>&rarr;</span></a
@@ -313,4 +371,22 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		var closeMenu = document.querySelector(".intro__close");
+		var navMenu = document.querySelector(".intro__nav");
+		var menuButton = document.querySelector(".intro__menubtn__container");
+
+		closeMenu.addEventListener("click", function (event) {
+			// navMenu.style.display = "block";
+			navMenu.classList.add("classAnimate");
+			menuButton.style.transform = "rotate(0deg)";
+		});
+
+		menuButton.addEventListener("click", function (event) {
+			menuButton.style.transform = "rotate(90deg)";
+			menuButton.style.transition = " all 0.3s ease-in-out";
+			navMenu.style.display = "block";
+			navMenu.classList.remove("classAnimate");
+		});
+	</script>
 </html>
