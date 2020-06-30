@@ -377,16 +377,16 @@
 		var menuButton = document.querySelector(".intro__menubtn__container");
 
 		closeMenu.addEventListener("click", function (event) {
-			// navMenu.style.display = "block";
-			navMenu.classList.add("classAnimate");
+			navMenu.style.display = "none";
+			// navMenu.classList.add("classAnimate");
 			menuButton.style.transform = "rotate(0deg)";
 		});
 
 		menuButton.addEventListener("click", function (event) {
 			menuButton.style.transform = "rotate(90deg)";
-			menuButton.style.transition = " all 0.5s ease-in-out";
+			menuButton.style.transition = " all 0.3s ease-in-out";
 			navMenu.style.display = "block";
-			navMenu.classList.remove("classAnimate");
+			// navMenu.classList.remove("classAnimate");
 		});
 	</script>
 </html>

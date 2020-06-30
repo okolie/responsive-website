@@ -76,7 +76,7 @@ body {
 }
 
 .classAnimate {
-	animation-fill-mode: forwards;
+	/* animation-fill-mode: forwards; */
 	animation-name: animateRight;
 	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
