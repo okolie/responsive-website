@@ -14,21 +14,21 @@
 					alt="blue-rectangle-image-for-styling"
 				/>
 			</div>
-
-			<ul class="intro__nav__container intro__nav">
-				<div class="intro__close">
-					<img src="./images/close.svg" alt="close button" />
-				</div>
-				<li><a href="#company">Company</a></li>
-				<li><a href="#statement">Who we are</a></li>
-				<li><a href="#services">What we do</a></li>
-				<li><a href="#shop">Shop</a></li>
-				<li><a href="#footer">Solutions</a></li>
-				<li><a href="#clients">Our Clientele</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#contact">Get in touch</a></li>
-			</ul>
-
+		
+				<ul class="intro__nav__container intro__nav">
+					<div class="intro__close">
+						<img src="./images/close.svg" alt="close button" />
+					</div>
+					<li><a href="#company">Company</a></li>
+					<li><a href="#statement">Who we are</a></li>
+					<li><a href="#services">What we do</a></li>
+					<li><a href="#shop">Shop</a></li>
+					<li><a href="#footer">Solutions</a></li>
+					<li><a href="#clients">Our Clientele</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#contact">Get in touch</a></li>
+				</ul>
+			
 			<div class="intro__logo__container">
 				<img src="./images/logo.svg" alt="site-logo" />
 			</div>
@@ -265,11 +265,12 @@
 				<button type="button">Send</button>
 			</div>
 		</section>
-		<!-- <div class="modal">
+		<div class="modal">
 			<div class="modal__content">
-				<div class="modal__close"
-					><img src="./images/close.svg" alt="close"
-				/></div>
+				<div class="modal__close">
+					<img src="./images/close.svg" alt="close" />
+				</div>
+
 				<h2>Who we are?</h2>
 				<p>
 					Our Mission is to Bring a State of Opulence to every Business in
@@ -297,7 +298,7 @@
 					natural Essential Oils and advanced Fragrance Diffusion Systems.
 				</p>
 			</div>
-		</div> -->
+		</div>
 		<footer id="footer">
 			<div class="footer__container">
 				<section class="footer__social">
@@ -376,17 +377,37 @@
 		var navMenu = document.querySelector(".intro__nav");
 		var menuButton = document.querySelector(".intro__menubtn__container");
 
+		// read more or mission codes
+		var missionReadMore = document.querySelector(
+			".mission__statement__readmore"
+		);
+		var modal = document.querySelector(".modal");
+		var modalCloseBtn = document.querySelector(".modal__close");
+
+		missionReadMore.addEventListener("click", function (event) {
+			modal.style.display = "block";
+			modal.classList.remove("out-modal");
+		});
+		modalCloseBtn.addEventListener("click", function (event) {
+			// modal.style.display = "none";
+			modal.classList.add("out-modal");
+			modal.style.transition = ".8s";
+		});
+
+		// end of read more or mission codes
 		closeMenu.addEventListener("click", function (event) {
 			navMenu.style.display = "none";
-			// navMenu.classList.add("classAnimate");
 			menuButton.style.transform = "rotate(0deg)";
+
+			// navMenu.classList.add("menuOverlay");
+			// navMenu.style.transition = " all .8s ease-in";
 		});
 
 		menuButton.addEventListener("click", function (event) {
 			menuButton.style.transform = "rotate(90deg)";
-			menuButton.style.transition = " all 1s ease-in-out";
+			menuButton.style.transition = "all .6s ease-out";
 			navMenu.style.display = "block";
-			// navMenu.classList.remove("classAnimate");
+			// navMenu.classList.remove("menuOverlay");
 		});
 	</script>
 </html>
