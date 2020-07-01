@@ -562,14 +562,22 @@ body {
 footer {
 	background-image: url(./images/footer.png);
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .footer__container {
-	display: grid;
+	border: 2px solid blue;
+
+	width: 80%;
+	/* display: grid;
+	place-items: center; */
 	padding: 1rem;
-	margin: 1rem;
+	margin: 1rem 0;
 }
 
 .footer__social {
+	/* width: 100%; */
+	border: 2px solid red;
 	display: flex;
 	flex-flow: column wrap;
 }
