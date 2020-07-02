@@ -365,8 +365,8 @@ body {
 }
 
 .clients__img__container > div > img {
-	width: auto;
-	/* width: 150px; */
+	/* width: auto; */
+	width: 150px;
 	/* max-width: 100%; */
 }
 
