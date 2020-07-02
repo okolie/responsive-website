@@ -592,7 +592,7 @@ footer {
 
 .footer__attributes {
 	/* border: 2px solid red; */
-	width: 50%;
+	width: 55%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -631,8 +631,9 @@ footer {
 	opacity: 0.7;
 }
 
-.footer__address p:first-child {
+.footer__details > p:first-of-type {
 	width: 70%;
+	/* border: 2px solid red; */
 }
 
 .footer__address div p:nth-of-type(3),
@@ -756,17 +757,9 @@ footer {
 		/* border: 2px solid red; */
 		padding-bottom: 0;
 	}
-	.mission__statement {
-		/* border: 2px solid red; */
-	}
 
-	.mission__statement__readmore {
-		/* border: 2px solid red; */
-		margin-bottom: 0;
-	}
 	.shop__statement {
 		width: 60%;
-		/* border: 2px solid red; */
 	}
 }
 
