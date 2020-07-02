@@ -974,6 +974,17 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+	.intro .intro__dotted__rect {
+		display: grid;
+		grid-column: 4/5;
+		grid-row: 10/12;
+		z-index: 6;
+		/* border: 2px solid red; */
+	}
+	.intro .intro__dotted__rect img {
+		/* max-width: 100%; */
+	}
+
 	.intro__logo__container {
 		grid-column: 2;
 		width: 80px;
@@ -991,7 +1002,7 @@ footer {
 		justify-content: space-evenly;
 		width: 80%;
 		flex-flow: row;
-		padding: 1rem 0;
+		padding: 0.2rem 0;
 		right: 40px;
 		/* border: 2px solid red; */
 		transition: all 1s ease-in-out 50ms;
@@ -1000,20 +1011,24 @@ footer {
 		font-size: 1rem;
 	}
 	.intro__nav li a:hover {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 	.intro__bg__container {
 		grid-column: 2/6;
-		grid-row: 2/10;
+		grid-row: 2/11;
 		margin-top: 2rem;
 	}
 	.intro__statement__container {
 		grid-column: 6/13;
-		grid-row: 3/10;
+		grid-row: 3/11;
+		justify-content: center;
+		align-items: center;
 	}
-	.intro__statement__container .statement > p {
+	.intro__statement__container .statement > p,
+	.intro__learnmore__description p {
 		color: #000;
 	}
+
 	.intro__statement__container .statement > p,
 	.intro__statement__container .statement > p span {
 		line-height: 3rem;
