@@ -275,6 +275,8 @@ body {
 	font-size: 1.5rem;
 	font-weight: normal;
 	padding: 1rem 0;
+	width: 100%;
+	text-align: center;
 }
 
 .services__header p {
@@ -335,10 +337,6 @@ body {
 	padding: 1rem;
 }
 
-.clients__img__container {
-	/* display: flex;
-	flex-flow: column wrap; */
-}
 .clients__img__container > div {
 	text-align: center;
 	margin: 2rem 0;
