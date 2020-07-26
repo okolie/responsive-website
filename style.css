@@ -229,7 +229,6 @@ body {
 }
 .mission__statement {
 	padding: 0 1rem;
-	text-align: justify;
 }
 
 .mission__statement p:nth-of-type(1) {
